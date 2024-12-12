@@ -1,0 +1,245 @@
+body{
+    padding: 0;
+    font-family: "Gabarito" ,sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px gray;
+    height: 10%;
+    padding: 0 10px;
+}
+.nav_bar_title h1{
+    color: #a435f0;
+}
+.searchbar{
+    padding: 10px;
+    margin: 1px;
+    border: solid 1px black;
+    border-radius: 20px;
+    width: 35%;
+}
+#searchbar{
+    padding: 10px;
+    margin: 1px;
+    border: solid 1px black;
+    border-radius: 20px;
+    width: 40%;
+}
+.searchbar input{
+    border: none;
+    width: 90%;
+    background-color: transparent;
+}
+.searchbar input:focus{
+    outline: none;
+}
+.navbar_s1{
+    margin: 1px;
+}
+.navbar_s1 a{
+    text-decoration: none;
+    color: black;
+    margin: 2px;
+    padding: 10px;
+}
+    
+.fa-solid fa-cart-shopping{
+    width: 20px;
+    background-color: black;
+}
+.navbar_s3 {
+    display: none;
+}
+
+#Login{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    
+}
+#Signup{
+    background-color: black;
+    color:white;
+    padding: 10px;
+    margin: 10px;
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px grey;
+    height: 10%;
+    justify-content: space-around;
+    display: flex;
+}
+.box{
+    background-color: #a435f0;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    justify-content: space-around;
+    border: solid 1px #a435f0;
+    border-radius: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.box:hover{
+    background-color: white;
+    transition: 1s;
+    color: #a435f0;
+    border: solid #a435f0 1px;
+}
+.container_image{
+    position: relative;
+    font-size: small;
+
+}
+
+.container_image img{
+    width: 100%;
+}
+
+.offer{
+    position: absolute;
+    top: 0;
+    margin: 90px;
+    align-items: left;
+    background-color: white;
+    width: 17%;
+    height: 40%;
+    padding: 10px;
+    text-align: justify;
+    /* font-size: 15px; */
+    margin-top: 40px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.recommended_container{
+    padding: 10px;
+}
+
+.Recommended_main{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.Recommended_main img{
+    width: 95%;
+    height: 40%;
+}
+.coursecard{
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
+    line-height: 18px;
+}
+.Recommended-most{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Recommended-most img{
+    width: 95%;
+    height: 40%;
+}
+
+.Recommended_next{
+display: flex;
+flex-wrap: wrap;
+}
+.Recommended_next img{
+    width: 95%;
+    height: 40%;
+    flex-grow: 1;
+    flex-basis: 20%;
+}
+.Topics_recommended{
+    padding: 10px;
+}
+.topics_container{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.topics_container p{
+    flex-basis: 25%;
+    border: solid grey 2px;
+    padding: 10px;
+    flex-grow: 1;
+    margin-top: 0px;
+}
+.Most_popular{
+    padding: 10px;
+}
+.black_box{
+    background-color: black;
+    padding: 30px;
+}
+.Box{
+    color: white;
+    display: flex;
+    padding: 10px;
+}
+.box_1{
+    padding: 10px;
+}
+.box_2{
+    padding: 10px;
+}
+.udemy{
+    color: white;
+    justify-content: space-between;
+    display: flex;
+    padding: 10px;
+}
+@media screen and (max-width: 800px){
+    body{
+        font-size: 10px;
+    }
+    .offer{
+        font-size: 7px;
+    }
+}
+@media screen and (max-width:600px){
+    .coursecard{
+        flex-basis: 40%;
+    }
+
+    .categories{
+        display: none;
+    }
+    .navbar_s1, .navbar_s2{
+        display: none;
+    }
+    .container-image{
+        display: none;
+    }
+    .searchbar{
+        display: none;
+    }
+    .container{
+        display: none;
+    }
+    .navbar_s3{
+        display: block;
+    }
+    .offer{
+        display: block;
+    }
+}
